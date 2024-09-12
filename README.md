@@ -34,8 +34,8 @@ Ensure you have the following installed:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/toko-online-kami.git
-   cd toko-online-kami
+   git clone https://github.com/yourusername/UASPAW_20200140118.git
+   cd UASPAW_20200140118
    ```
 
 2. **Install Dependencies**

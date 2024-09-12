@@ -1,0 +1,167 @@
+/* Root element */
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Logo styling */
+.logo {
+  height: 5em;
+  padding: 1em;
+  transition: transform 300ms, filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 3em rgba(0, 150, 255, 0.6));
+  transform: scale(1.1);
+}
+
+/* Spinning animation for logos */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 15s linear;
+  }
+}
+
+/* Card styling */
+.card {
+  padding: 1.5em;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 300ms ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Link styling */
+.read-the-docs {
+  color: #666;
+}
+
+/* App layout */
+.App {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "cart"
+    "footer";
+  min-height: 100vh;
+  background: #f1f1f1;
+}
+
+/* Header styling */
+.App-header {
+  grid-area: header;
+  background-color: #007BFF;
+  padding: 1.5rem;
+  color: white;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.App-header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.App-header nav ul li {
+  margin: 0 1.5rem;
+}
+
+.App-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.App-header nav ul li a:hover {
+  color: #00d1b2;
+  text-shadow: 0 0 3px rgba(0, 255, 255, 0.8);
+}
+
+/* Main content styling */
+.App-main {
+  grid-area: main;
+  padding: 2rem;
+  max-width: 100%;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Cart section styling */
+.App-cart {
+  grid-area: cart;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 1rem;
+  border-radius: 8px;
+  position: sticky;
+  top: 1rem;
+}
+
+/* Footer styling */
+.App-footer {
+  grid-area: footer;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Button styling */
+button {
+  background-color: #00d1b2;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #00b89c;
+  transform: translateY(-2px);
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
